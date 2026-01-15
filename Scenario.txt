@@ -1,0 +1,53 @@
+                                                                      UbiUniversity: Ubisoft Game Store Database
+
+Scenario: You are tasked with developing a comprehensive database for Ubisoft's online game store. Ubisoft offers a variety of games, each developed by various studios, and has a growing community of gamers. Your mission is to design and implement a relational database to efficiently manage this gaming information.
+
+Entities:
+
+1. Games:
+• GameID (Primary Key)
+• Title
+• StudioID (Foreign Key referencing Studios)
+• Genre
+• Price
+
+2. Studios:
+• StudioID (Primary Key)
+• StudioName
+
+3. Gamers:
+• GamerID (Primary Key)
+• FirstName
+• LastName
+• Email
+• Phone
+
+4. Purchases:
+• PurchaseID (Primary Key)
+• GamerID (Foreign Key referencing Gamers)
+• GameID (Foreign Key referencing Games)
+• PurchaseDate
+• PurchaseAmount
+
+Tasks:
+
+1. Create Tables:
+• Create the following tables: Games, Studios, Gamers, and Purchases.
+
+2. Insert Data:
+• Populate each table with at least 10 records of sample data for each table
+
+3. Retrieve Data:
+• Craft SQL queries to retrieve the following information. Use only one stored procedure for all the queries.
+• List all games along with their studios and prices.
+• Showcase details of gamers who have made a purchase.
+• Display the total number of purchases made by each gamer.
+• Formulate a query to find the average price of games in each genre
+
+4. Update Data. *Use a stored procedure for each update.
+• Adjust the price of a specific game. *The price and the GameId should be passed as parameters. 
+• Update the email address of a specific gamer. The email and the GamerId should be passed as parameters
+
+5. Delete Data. *Use stored procedure
+• Eliminate a gamer from the database. GamerId should be passed as parameter
+
