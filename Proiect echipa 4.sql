@@ -1,4 +1,4 @@
---1. Create the following tables: Games, Studios, Gamers, and Purchases.
+[1. Create the following tables: Games, Studios, Gamers, and Purchases.]
 
  CREATE TABLE Games (
 GameID INT,
